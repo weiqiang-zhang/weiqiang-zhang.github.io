@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weiqiang Zhang — PhD Candidate in Economics, Freie Universität Berlin</title>
+<meta name="description" content="Weiqiang Zhang is a PhD candidate in Economics at Freie Universität Berlin, working on political economy, labor economics, and institutions.">
+<meta name="author" content="Weiqiang Zhang">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Weiqiang Zhang — PhD Candidate in Economics, FU Berlin">
+<meta property="og:description" content="Political economy · Labor economics · Institutional economics · Development economics">
+<meta property="og:image" content="assets/photo.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Georgia,serif'>WZ</text></svg>">
+
+<style>
+  :root{
+    --ink:#1a1a1a;
+    --muted:#5c5c5c;
+    --line:#e2e0dc;
+    --bg:#fdfcfa;
+    --accent:#1f4e79;
+    --accent-soft:#f0f4f8;
+    --maxw:840px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#e8e6e2; --muted:#a3a09b; --line:#33322f;
+      --bg:#141413; --accent:#8ab4dd; --accent-soft:#1c2733;
+    }
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(31,78,121,.28)}
+  a:hover{border-bottom-color:currentColor}
+  @media (prefers-color-scheme: dark){a{border-bottom-color:rgba(138,180,221,.35)}}
+
+  /* ---------- masthead ---------- */
+  header.masthead{padding:64px 0 0}
+  h1{
+    font-size:2.35rem;line-height:1.12;margin:0 0 6px;
+    font-weight:600;letter-spacing:-.015em;
+  }
+  .subtitle{color:var(--muted);font-size:1.02rem;margin:0}
+  nav.topnav{
+    margin:26px 0 0;padding:14px 0 0;border-top:1px solid var(--line);
+    font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  nav.topnav a{margin-right:20px;color:var(--muted);border-bottom:none;display:inline-block}
+  nav.topnav a:hover{color:var(--accent)}
+
+  /* ---------- intro ---------- */
+  .intro{display:flex;gap:38px;align-items:flex-start;margin:40px 0 8px}
+  .intro figure{margin:0;flex:0 0 208px}
+  .intro img{
+    width:208px;height:260px;object-fit:cover;display:block;
+    border-radius:3px;filter:grayscale(8%);
+    box-shadow:0 1px 3px rgba(0,0,0,.10),0 8px 26px rgba(0,0,0,.07);
+  }
+  .intro .bio{flex:1;min-width:0}
+  .intro .bio p{margin:0 0 15px}
+  .intro .bio p:first-child{margin-top:-.28em}
+
+  .contact-line{
+    font-size:.93rem;color:var(--muted);margin-top:20px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  .contact-line a{margin-right:16px;display:inline-block;white-space:nowrap}
+
+  /* ---------- sections ---------- */
+  section{padding:38px 0 0}
+  h2{
+    font-size:.83rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 18px;padding-bottom:9px;border-bottom:1px solid var(--line);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+
+  ol.pubs{list-style:none;margin:0;padding:0;counter-reset:pub}
+  ol.pubs > li{
+    position:relative;padding:0 0 20px 0;margin:0 0 20px;
+    border-bottom:1px solid var(--line);
+  }
+  ol.pubs > li:last-child{border-bottom:none;padding-bottom:0;margin-bottom:0}
+  .ptitle{font-weight:600;display:block;margin-bottom:3px}
+  .pmeta{color:var(--muted);font-size:.95rem}
+  .pmeta em{font-style:italic}
+  .me{border-bottom:1px dotted var(--line)}
+  .tag{
+    display:inline-block;font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;
+    background:var(--accent-soft);color:var(--accent);
+    padding:2px 8px;border-radius:3px;margin-left:8px;vertical-align:2px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  .doi{font-size:.87rem;margin-left:2px;white-space:nowrap}
+
+  /* two-column date list */
+  dl.timeline{margin:0;display:grid;grid-template-columns:170px 1fr;gap:4px 22px}
+  dl.timeline dt{color:var(--muted);font-size:.92rem;padding-top:.16em}
+  dl.timeline dd{margin:0 0 10px}
+  dl.timeline dd:last-of-type{margin-bottom:0}
+  dl.timeline .where{color:var(--muted);font-size:.94rem}
+
+  ul.plain{margin:0;padding-left:1.15em}
+  ul.plain li{margin-bottom:7px}
+  ul.plain li:last-child{margin-bottom:0}
+
+  .inline-list{margin:0;color:var(--ink)}
+
+  .skills{display:grid;grid-template-columns:170px 1fr;gap:4px 22px;margin:0}
+  .skills dt{color:var(--muted);font-size:.92rem;padding-top:.16em}
+  .skills dd{margin:0 0 10px}
+
+  .cv-cta{
+    display:inline-block;margin-top:4px;padding:9px 17px;
+    border:1px solid var(--accent);border-radius:3px;color:var(--accent);
+    font-size:.9rem;letter-spacing:.03em;border-bottom:1px solid var(--accent);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  .cv-cta:hover{background:var(--accent);color:#fff}
+
+  footer{
+    margin-top:56px;padding:22px 0 60px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.85rem;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+  }
+
+  @media (max-width:640px){
+    body{font-size:16px}
+    header.masthead{padding-top:40px}
+    h1{font-size:1.9rem}
+    .intro{flex-direction:column;gap:24px;align-items:center;text-align:left}
+    .intro figure{flex:none;align-self:flex-start}
+    .intro img{width:150px;height:188px}
+    dl.timeline,.skills{grid-template-columns:1fr;gap:0}
+    dl.timeline dt,.skills dt{margin-top:10px}
+    dl.timeline dd,.skills dd{margin-bottom:8px}
+    nav.topnav a{margin-right:14px;font-size:.8rem}
+  }
+  @media print{
+    body{background:#fff;color:#000;font-size:11pt}
+    nav.topnav,footer,.cv-cta{display:none}
+    a{color:#000;border:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <h1>Weiqiang Zhang</h1>
+    <p class="subtitle">PhD Candidate in Economics · Freie Universität Berlin</p>
+    <nav class="topnav">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#experience">Experience</a>
+      <a href="assets/CV_Weiqiang_Zhang.pdf">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <figure>
+      <img src="assets/photo.jpg" alt="Portrait of Weiqiang Zhang" width="208" height="260">
+    </figure>
+    <div class="bio">
+      <p>I am a PhD candidate in Economics at <strong>Freie Universität Berlin</strong>, where I am supervised by Prof. Dr. Theocharis Grigoriadis at the Institute for East European Studies.</p>
+      <p>My primary research is in the <strong>political economy of institutions</strong> and <strong>development economics</strong>. I study how political institutions — ideological education, the enforcement of everyday rights, the design of state policy — shape economic behaviour, labor market outcomes, and local development, with an empirical focus on China. Methodologically I work with quasi-experimental designs on panel, administrative, and survey data.</p>
+      <p>Alongside this, I maintain an ongoing interest in <strong>energy and environmental economics</strong>, where most of my published work to date is situated, and which I approach from the same institutional angle: how carbon markets, energy transitions, and state policy translate into employment and firm behaviour.</p>
+      <p>Before Berlin I read for a double master's degree at Southeast University and Monash University, and worked as a research assistant at Shanxi University and Southeast University.</p>
+
+      <p class="contact-line">
+        <a href="mailto:weiqiang.zhang@fu-berlin.de">weiqiang.zhang@fu-berlin.de</a>
+        <a href="https://orcid.org/0000-0002-1690-3701">ORCID</a>
+        <!-- 想加 Google Scholar / SSRN / GitHub / LinkedIn，把下面几行取消注释并填上自己的链接：
+        <a href="https://scholar.google.com/citations?user=你的ID">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/你的ID">LinkedIn</a>
+        -->
+        <a href="assets/CV_Weiqiang_Zhang.pdf">CV (PDF)</a>
+      </p>
+    </div>
+  </div>
+
+  <section id="research">
+    <h2>Research Interests</h2>
+    <dl class="skills">
+      <dt>Primary</dt>
+      <dd>Political Economy · Institutional Economics · Development Economics · Labor Economics</dd>
+      <dt>Further interests</dt>
+      <dd>Energy Economics · Environmental and Climate Policy · Applied Econometrics</dd>
+    </dl>
+  </section>
+
+  <section id="wip">
+    <h2>Work in Progress</h2>
+    <ol class="pubs">
+      <li>
+        <span class="ptitle">Erasing Class: The Rollback of Marxist Political Education and Labor Market Outcomes in China</span>
+        <!-- 以后上 job market 时，把下面这行末尾的注释去掉就会显示一个 "Job market paper" 标签：
+             <span class="tag">Job market paper</span> -->
+        <span class="pmeta">Solo-authored.</span>
+      </li>
+      <li>
+        <span class="ptitle">The Yield of Yielding: How Enforcing Pedestrian Rights Promotes Local Commerce</span>
+        <span class="pmeta">Solo-authored.</span>
+      </li>
+    </ol>
+  </section>
+
+  <section id="publications">
+    <h2>Refereed Journal Articles</h2>
+    <ol class="pubs">
+      <li>
+        <span class="ptitle">Winner takes all? Understanding the impact of energy transition on employment under the constraint of China's carbon peak target</span>
+        <span class="pmeta">Jianhui Cong, Rui Li, and <span class="me">Weiqiang Zhang</span>. <em>Carbon Balance and Management</em>, forthcoming (2026).
+          <a class="doi" href="https://doi.org/10.1186/s13021-026-00475-9">DOI ↗</a></span>
+      </li>
+      <li>
+        <span class="ptitle">The impacts of the global energy transition on China's energy security in the long-term: Heterogeneous evidence from the supply and consumption sides</span>
+        <span class="pmeta">Xiaoxiao Hu, <span class="me">Weiqiang Zhang</span>, Shengling Zhang, Yu Hao, and Jianhui Cong. <em>Renewable Energy</em>, 255, 123784 (2025).
+          <a class="doi" href="https://doi.org/10.1016/j.renene.2025.123784">DOI ↗</a></span>
+      </li>
+      <li>
+        <span class="ptitle">Possible green-technology innovation motivated by China's pilot carbon market: New evidence from city panel data</span>
+        <span class="pmeta">Jianhui Cong, <span class="me">Weiqiang Zhang</span>, Hongjuan Guo, and Yongbin Zhao. <em>Climate Policy</em>, 1–14 (2023).
+          <a class="doi" href="https://doi.org/10.1080/14693062.2023.2273939">DOI ↗</a></span>
+      </li>
+      <li>
+        <span class="ptitle">How do investors in the Chinese stock market react to external uncertainty? An event study of the Sino-US disputes</span>
+        <span class="pmeta">Xin Gu, <span class="me">Weiqiang Zhang</span>, and Sang Cheng. <em>Pacific-Basin Finance Journal</em>, 68, 101614 (2021).
+          <a class="doi" href="https://doi.org/10.1016/j.pacfin.2021.101614">DOI ↗</a></span>
+      </li>
+      <li>
+        <span class="ptitle">How do firms respond to COVID-19? First evidence from Suzhou, China</span>
+        <span class="pmeta">Xin Gu, Shan Ying, <span class="me">Weiqiang Zhang</span>, and Yewei Tao. <em>Emerging Markets Finance and Trade</em>, 56(10), 2181–2197 (2020).
+          <a class="doi" href="https://doi.org/10.1080/1540496X.2020.1789455">DOI ↗</a></span>
+      </li>
+      <li>
+        <span class="ptitle">An investment risk analysis of the cross-border power interconnection market in countries along the Belt and Road</span>
+        <span class="pmeta">Xin Gu, <span class="me">Weiqiang Zhang</span>, Jie Jin, and Zhenyao Liu. <em>Journal of Southeast University (Philosophy and Social Science)</em>, 22(03), 82–89 (2020).
+          <a class="doi" href="https://doi.org/10.13916/j.cnki.issn1671-511x.2020.03.009">DOI ↗</a></span>
+      </li>
+    </ol>
+  </section>
+
+  <section id="talks">
+    <h2>Academic Presentations</h2>
+    <dl class="timeline">
+      <dt>2026</dt>
+      <dd>European Economic Association (EEA) Congress <span class="where">— Dublin, Ireland</span></dd>
+      <dt>2026</dt>
+      <dd>International Economic Association (IEA) World Congress <span class="where">— Belgrade, Serbia</span></dd>
+      <dt>2026</dt>
+      <dd>2nd Berlin PhD Conference in Economics, Berlin School of Economics <span class="where">— Berlin, Germany</span></dd>
+    </dl>
+  </section>
+
+  <section id="schools">
+    <h2>Summer Schools &amp; Workshops</h2>
+    <dl class="timeline">
+      <dt>Aug 2026</dt>
+      <dd>5th ACES Political Economy Summer School, Association for Comparative Economic Studies <span class="where">— Kathmandu, Nepal</span></dd>
+      <dt>2025 – 2026</dt>
+      <dd>Economics Research Workshop, Institute for East European Studies, Freie Universität Berlin <span class="where">— three terms</span></dd>
+    </dl>
+  </section>
+
+  <section id="service">
+    <h2>Refereeing</h2>
+    <p class="inline-list"><em>The World Economy</em> · <em>Climate Policy</em> · <em>Energy Sources, Part B: Economics, Planning, and Policy</em> · <em>Utilities Policy</em></p>
+  </section>
+
+  <section id="experience">
+    <h2>Education</h2>
+    <dl class="timeline">
+      <dt>2023 – present</dt>
+      <dd>PhD in Economics, <strong>Freie Universität Berlin</strong> <span class="where">— Supervisor: Prof. Dr. Theocharis Grigoriadis</span></dd>
+      <dt>2019 – 2021</dt>
+      <dd>MSc in International Business, <strong>Southeast University</strong> &amp; <strong>Monash University</strong> <span class="where">— double master's programme</span></dd>
+      <dt>2013 – 2017</dt>
+      <dd>BSc in Auditing, <strong>Shanghai University of International Business and Economics</strong></dd>
+    </dl>
+  </section>
+
+  <section id="ra">
+    <h2>Research Experience</h2>
+    <dl class="timeline">
+      <dt>2021 – 2023</dt>
+      <dd>Research Assistant, Shanxi University <span class="where">— climate economics and poverty alleviation; panel and difference-in-differences designs; rural labour force surveys</span></dd>
+      <dt>2020 – 2021</dt>
+      <dd>Research Assistant, Southeast University <span class="where">— projects funded by the National Social Science Foundation of China, State Grid Suzhou, and the Jiangsu Federation of Social Sciences</span></dd>
+      <dt>2019</dt>
+      <dd>Survey Researcher, Institute of Geographic Sciences and Natural Resources Research, Chinese Academy of Sciences <span class="where">— 6th round of the UNEP Rural Labour Force Employment and Rural Development Survey, Shaanxi Province; 50+ household interviews across five counties</span></dd>
+    </dl>
+  </section>
+
+  <section id="skills">
+    <h2>Methods &amp; Software</h2>
+    <dl class="skills">
+      <dt>Methods</dt>
+      <dd>Panel data models (FE/RE, IV, DiD) · Event study · GARCH · DSGE (basic)</dd>
+      <dt>Software</dt>
+      <dd>Stata · MATLAB · R · L<span style="font-size:.85em;vertical-align:.12em">A</span>T<span style="vertical-align:-.22em">E</span>X · CiteSpace</dd>
+      <dt>Languages</dt>
+      <dd>Chinese (native) · English (fluent) · German (basic)</dd>
+    </dl>
+  </section>
+
+  <section id="awards">
+    <h2>Grants, Honors &amp; Awards</h2>
+    <dl class="timeline">
+      <dt>2026</dt>
+      <dd>Travel Grant (€500), Ernst-Reuter-Gesellschaft der Freunde, Förderer und Ehemaligen der Freien Universität Berlin e.&thinsp;V. (ERG)</dd>
+      <dt>2020</dt>
+      <dd>Best Paper Prize, Jiangsu Graduate Academic Innovation Forum</dd>
+      <dt>2016</dt>
+      <dd>Thinking Ability Award, Youth Elite of China 100 (YEC100)</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Institute for East European Studies<br>
+      School of Business &amp; Economics, Freie Universität Berlin<br>
+      Garystraße 55, 14195 Berlin, Germany
+    </p>
+    <p><a href="mailto:weiqiang.zhang@fu-berlin.de">weiqiang.zhang@fu-berlin.de</a></p>
+    <p><a class="cv-cta" href="assets/CV_Weiqiang_Zhang.pdf">Download full CV (PDF)</a></p>
+  </section>
+
+  <footer>
+    <span>© 2026 Weiqiang Zhang</span>
+    <span>Last updated: August 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
